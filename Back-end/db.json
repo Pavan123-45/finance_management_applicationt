@@ -1,12 +1,60 @@
 {
   "users": [
     {
-      "expenseName": "dcfsd",
+      "expenseName": "hfd",
       "category": "Health",
-      "date": "2024-04-04",
-      "amount": "fgd",
-      "createdBy": "fgdsfg",
-      "id": 2
+      "date": "2024-04-05",
+      "amount": "4532743",
+      "createdBy": ",o",
+      "id": 3
+    },
+    {
+      "expenseName": "argaer",
+      "category": "Travel",
+      "date": "2024-04-02",
+      "amount": "567",
+      "createdBy": "guk",
+      "id": 4
+    },
+    {
+      "expenseName": "hfd",
+      "category": "Health",
+      "date": "2024-02-02",
+      "amount": "4532743",
+      "createdBy": ",o",
+      "id": 5
+    },
+    {
+      "expenseName": "hfd",
+      "category": "Health",
+      "date": "2024-03-03",
+      "amount": "4532743",
+      "createdBy": ",o",
+      "id": 6
+    },
+    {
+      "expenseName": "hfd",
+      "category": "Health",
+      "date": "2024-01-01",
+      "amount": "4532743",
+      "createdBy": ",o",
+      "id": 7
+    },
+    {
+      "expenseName": "sdvfdsf",
+      "category": "Electronics",
+      "date": "2023-01-01",
+      "amount": "14",
+      "createdBy": "lp",
+      "id": 8
+    },
+    {
+      "expenseName": "dsfd",
+      "category": "Books",
+      "date": "2024-04-11",
+      "amount": "3453",
+      "createdBy": "dgvsvg",
+      "id": 9
     }
   ]
 }

@@ -16,7 +16,11 @@ const CreateExpense = () => {
     navigate('/view_expense')
   }
 
+  const getLatestTime = () => {
+    const now = new Date();
+  }
   const CreateExpense =(e)=>{
+    console.log();
     let payload={
       expenseName,category,date,amount,createdBy
      }
