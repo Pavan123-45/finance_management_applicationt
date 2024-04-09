@@ -6,6 +6,7 @@ import App from './App';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ViewExpense from './components/ViewExpense';
 import CreateExpense from './components/CreateExpense';
+import UpdateExpense from './components/UpdateExpense';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -24,7 +25,7 @@ export const appRouter = createBrowserRouter([
     element: < App/>
   },
   {
-    path: "/view_expens",
+    path: "/view_expense",
     element: < ViewExpense/>
   },
   {
@@ -33,8 +34,8 @@ export const appRouter = createBrowserRouter([
     element: < CreateExpense/>
   },
   {
-    path: "/edit_expense",
-    element: < CreateExpense/>
+    path: "/edit_expense/:id",
+    element:<UpdateExpense/>
   }
 ])
 

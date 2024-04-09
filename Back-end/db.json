@@ -1,28 +1,12 @@
 {
   "users": [
     {
-      "name": "dvsv",
-      "category": "vs",
-      "dateofexpense": "2651",
-      "amount": 1,
-      "updatedat":"just",
-      "createdby":"me"
-    },
-    {
-        "name": "dvsv",
-        "category": "vs",
-        "dateofexpense": "2651",
-        "amount": 1,
-        "updatedat":"just",
-        "createdby":"me"
-      },
-      {
-        "name": "dvsv",
-        "category": "vs",
-        "dateofexpense": "2651",
-        "amount": 1,
-        "updatedat":"just",
-        "createdby":"me"
-      }
+      "expenseName": "dcfsd",
+      "category": "Health",
+      "date": "2024-04-04",
+      "amount": "fgd",
+      "createdBy": "fgdsfg",
+      "id": 2
+    }
   ]
 }

@@ -1,7 +1,7 @@
 import axios from 'axios';
-import React, { useState } from 'react'
-import {useNavigate} from 'react-router-dom'
-const CreateExpense = () => {
+import React, { useEffect, useState } from 'react'
+import {useNavigate, useParams} from 'react-router-dom'
+const UpdateExpense = () => {
   const navigate = useNavigate();
 
     const [expenseName, setExpenseName]=useState("");
@@ -11,25 +11,20 @@ const CreateExpense = () => {
     const [amount, setAmount] = useState("");
     const [createdBy, setCreatedBy] = useState("");
    
-    
+    const {id} = useParams();
+    console.log(id);
   const cancelHandle =()=>{
     navigate('/view_expense')
   }
-
-  const CreateExpense =(e)=>{
+   
+  const updateExpense =(e)=>{
+   
     let payload={
       expenseName,category,date,amount,createdBy
      }
-     if(!expenseName && !category  && !date && !amount  && !createdBy ) 
-     {
-      alert("Enter the input value")
-      window.location.reload("/create_expense")
-      return
-     }
      e.preventDefault()
-    //  console.log(expenseName,description,category,date,amount,createdBy)
-    console.log(payload);
-    axios.post(`http://localhost:3000/users`,payload)
+     console.log(expenseName,description,category,date,amount,createdBy)
+    axios.put(`http://localhost:3000/users/${id}`,payload)
     .then((response)=>{
         console.log("Data has been stored" + response);
         navigate("/view_expense")
@@ -40,6 +35,27 @@ const CreateExpense = () => {
 
   }
 
+  useEffect(()=>{
+    console.log(id);
+    axios.get(`http://localhost:3000/users/${id}`)
+.then((response)=>{
+    console.log("Data has been stored");
+     const data =response.data
+     console.log(data);
+    setExpenseName(data.expenseName);
+        setDescription(data.description);
+        setCategory(data.category);
+        setDate(data.date);
+        setAmount(data.amount);
+        setCreatedBy(data.createdBy);
+   
+})
+.catch((response)=>{
+  console.log("Data hasnt stored");
+  
+})
+
+},[id])
    return (
     <div className=' rounded-md  flex justify-center mt-16 '>
       <form className='border p-10 rounded-md border-black'>
@@ -47,7 +63,7 @@ const CreateExpense = () => {
         <label>Name</label> <br/>
         <input 
          type='text' 
-         placeholder='Name the Expense '
+         placeholder='Name the Expense' value={expenseName}
          className='p-2 mb-2 border rounded-md w-72  bg-gray-200 '
          onChange={(e)=>{
           setExpenseName(e.target.value)}}/><br/>
@@ -55,13 +71,13 @@ const CreateExpense = () => {
          <label>Description</label> <br/>
          <input 
          type='text' 
-         placeholder='Describe the expense '
+         placeholder='Describe the expense ' value={description}
          className='p-2 mb-2 border rounded-md w-72  bg-gray-200'
          onChange={(e)=>{
           setDescription(e.target.value)}}/><br/>
 
          <label>Category</label> <br/>
-         <select className='p-2 mb-2 border rounded-lg w-72  bg-gray-200 text-gray-400'
+         <select className='p-2 mb-2 border rounded-lg w-72  bg-gray-200 text-gray-400' value={category}
           onChange={(e)=>{
             setCategory(e.target.value)}}>
            <option value="Select Category">Select Category</option>
@@ -76,15 +92,15 @@ const CreateExpense = () => {
          <label>Date of Expense</label> <br/>
          <input 
          type='date' 
-         placeholder='Date of Expense '
+         placeholder='Date of Expense ' value={date}
          className='p-2 mb-2 border rounded-md w-72  bg-gray-200  text-gray-400'
          onChange={(e)=>{
           setDate(e.target.value)}}/><br/>
 
          <label>Expense Amount </label> <br/>
          <input 
-         type='number' 
-         placeholder='Expense Amount in INR '
+         type='text' 
+         placeholder='Expense Amount in INR ' value={amount}
          className='p-2 mb-2 border rounded-lg w-72  bg-gray-200'
          onChange={(e)=>{
           setAmount(e.target.value)}}/><br/>
@@ -92,7 +108,7 @@ const CreateExpense = () => {
           <label>Created By </label> <br/>
          <input 
          type='text' 
-         placeholder='Enter Created Name  '
+         placeholder='Enter Created Name  ' value={createdBy}
          className='p-2 mb-2 border rounded-lg w-72  bg-gray-200'
          onChange={(e)=>{
           setCreatedBy(e.target.value)}}/><br/><br/>
@@ -101,7 +117,7 @@ const CreateExpense = () => {
           <button  className='border p-1 px-2 rounded-md bg-gray-400 text-white hover:bg-gray-500'
           onClick={cancelHandle}>Cancel</button>
           <button className='border p-1 px-2 rounded-md bg-green-400 text-white hover:bg-green-500' 
-          onClick={ CreateExpense}>CreateExpense</button>
+          onClick={ updateExpense}>UpdateExpense</button>
         </div>
     </form>
     
@@ -109,4 +125,7 @@ const CreateExpense = () => {
   )
 }
 
-export default CreateExpense
+export default UpdateExpense
+
+
+

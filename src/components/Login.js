@@ -5,16 +5,19 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
  const navigate = useNavigate();
-
+ 
   const handleLogin = () => {
     // Dummy login logic
     // You can use email/password for authentication
-    email.toLocaleLowerCase()==="testuser@gmail.com".toLocaleLowerCase() && 
-    password.toLocaleLowerCase()==="testuser123".toLocaleLowerCase() ? navigate('/view_expens') :
-    setEmail(''); 
-    setPassword('');
-    navigate('/login') 
+    (email.toLocaleLowerCase()==="testuser@gmail.com".toLocaleLowerCase() && 
+    password.toLocaleLowerCase()==="testuser123".toLocaleLowerCase()) ? navigate('/view_expense') : wrongCredential() 
   };
+  const wrongCredential=()=>{
+    setEmail("")
+    setPassword("")
+    navigate('/login')
+  }
+  
 
   return (
     <div className=" flex flex-col items-center justify-center h-screen ">
