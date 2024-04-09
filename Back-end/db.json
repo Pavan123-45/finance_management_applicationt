@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "dvsv",
+      "category": "vs",
+      "dateofexpense": "2651",
+      "amount": 1,
+      "updatedat":"just",
+      "createdby":"me"
+    },
+    {
+        "name": "dvsv",
+        "category": "vs",
+        "dateofexpense": "2651",
+        "amount": 1,
+        "updatedat":"just",
+        "createdby":"me"
+      },
+      {
+        "name": "dvsv",
+        "category": "vs",
+        "dateofexpense": "2651",
+        "amount": 1,
+        "updatedat":"just",
+        "createdby":"me"
+      }
+  ]
+}
