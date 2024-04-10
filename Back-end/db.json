@@ -53,6 +53,22 @@
       "getTime": "4/10/2024 6:16:19 PM",
       "createdBy": "me",
       "id": 8
+    },
+    {
+      "expenseName": "Tablets",
+      "category": "Health",
+      "date": "2024-04-10",
+      "amount": "20",
+      "createdBy": "god",
+      "id": 9
+    },
+    {
+      "expenseName": "tablets",
+      "category": "Health",
+      "date": "2024-04-12",
+      "amount": "34",
+      "createdBy": "me",
+      "id": 11
     }
   ]
 }
