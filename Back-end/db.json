@@ -1,60 +1,70 @@
 {
   "users": [
     {
-      "expenseName": "hfd",
-      "category": "Health",
-      "date": "2024-04-05",
-      "amount": "4532743",
-      "createdBy": ",o",
+      "expenseName": "Food",
+      "category": "Food",
+      "date": "2024-04-09",
+      "amount": "300",
+      "getTime": "4/10/2024 6:16:19 PM",
+      "createdBy": "me",
+      "id": 1
+    },{
+      "expenseName": "Food",
+      "category": "Food",
+      "date": "2024-04-09",
+      "amount": "300",
+      "getTime": "4/10/2024 6:16:19 PM",
+      "createdBy": "me",
+      "id": 2
+    },{
+      "expenseName": "Food",
+      "category": "Food",
+      "date": "2024-04-09",
+      "amount": "300",
+      "getTime": "4/10/2024 6:16:19 PM",
+      "createdBy": "me",
       "id": 3
-    },
-    {
-      "expenseName": "argaer",
-      "category": "Travel",
-      "date": "2024-04-02",
-      "amount": "567",
-      "createdBy": "guk",
+    },{
+      "expenseName": "Food",
+      "category": "Food",
+      "date": "2024-04-09",
+      "amount": "300",
+      "getTime": "4/10/2024 6:16:19 PM",
+      "createdBy": "me",
       "id": 4
-    },
-    {
-      "expenseName": "hfd",
-      "category": "Health",
-      "date": "2024-02-02",
-      "amount": "4532743",
-      "createdBy": ",o",
+    },{
+      "expenseName": "Food",
+      "category": "Food",
+      "date": "2024-04-09",
+      "amount": "300",
+      "getTime": "4/10/2024 6:16:19 PM",
+      "createdBy": "me",
       "id": 5
-    },
-    {
-      "expenseName": "hfd",
-      "category": "Health",
-      "date": "2024-03-03",
-      "amount": "4532743",
-      "createdBy": ",o",
+    },{
+      "expenseName": "Food",
+      "category": "Food",
+      "date": "2024-04-09",
+      "amount": "300",
+      "getTime": "4/10/2024 6:16:19 PM",
+      "createdBy": "me",
       "id": 6
-    },
-    {
-      "expenseName": "hfd",
-      "category": "Health",
-      "date": "2024-01-01",
-      "amount": "4532743",
-      "createdBy": ",o",
+    },{
+      "expenseName": "Food",
+      "category": "Food",
+      "date": "2024-04-09",
+      "amount": "300",
+      "getTime": "4/10/2024 6:16:19 PM",
+      "createdBy": "me",
       "id": 7
-    },
-    {
-      "expenseName": "sdvfdsf",
-      "category": "Electronics",
-      "date": "2023-01-01",
-      "amount": "14",
-      "createdBy": "lp",
+    },{
+      "expenseName": "Food",
+      "category": "Food",
+      "date": "2024-04-09",
+      "amount": "300",
+      "getTime": "4/10/2024 6:16:19 PM",
+      "createdBy": "me",
       "id": 8
-    },
-    {
-      "expenseName": "dsfd",
-      "category": "Books",
-      "date": "2024-04-11",
-      "amount": "3453",
-      "createdBy": "dgvsvg",
-      "id": 9
     }
+    
   ]
 }

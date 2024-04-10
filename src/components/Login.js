@@ -1,24 +1,23 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-const Login = () => {
+  const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
  const navigate = useNavigate();
- 
   const handleLogin = () => {
-    // Dummy login logic
-    // You can use email/password for authentication
     (email.toLocaleLowerCase()==="testuser@gmail.com".toLocaleLowerCase() && 
-    password.toLocaleLowerCase()==="testuser123".toLocaleLowerCase()) ? navigate('/view_expense') : wrongCredential() 
+    password.toLocaleLowerCase()==="testuser123".toLocaleLowerCase()) ? navigate('/view_expense'): wrongCredential() 
   };
   const wrongCredential=()=>{
     setEmail("")
     setPassword("")
+    setErrorMessage("wrong")
     navigate('/login')
   }
-  
-
+   sessionStorage.setItem('email',email)
+   sessionStorage.setItem('password',password)
+   
   return (
     <div className=" flex flex-col items-center justify-center h-screen ">
     <div className='border-2 p-10 border-gray-300 bg-slate-100 rounded-lg'>
@@ -38,6 +37,9 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
           className="p-2 mb-4 border rounded-lg w-72"
         />
+       {errorMessage==="wrong" && (
+          <p className="text-red-500 mb-4">Enter correct credential</p>
+        )}
         <button onClick={handleLogin} className="bg-blue-500 text-white py-2 px-4 rounded">
           Login
         </button>
