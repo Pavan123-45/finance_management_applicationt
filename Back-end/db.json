@@ -1,74 +1,30 @@
 {
   "users": [
     {
-      "expenseName": "Food",
+      "expenseName": "Gaming chair",
+      "category": "Home",
+      "date": "2024-03-29",
+      "amount": "6000",
+      "getTime": "4/11/2024 12:50:26 PM",
+      "createdBy": "me",
+      "id": 16
+    },
+    {
+      "expenseName": "RichDaddyPoorDaddy",
+      "category": "Books",
+      "date": "2024-03-22",
+      "amount": "120",
+      "getTime": "4/11/2024 12:53:24 PM",
+      "createdBy": "me",
+      "id": 17
+    },
+    {
+      "expenseName": "food",
       "category": "Food",
-      "date": "2024-04-09",
-      "amount": "300",
-      "getTime": "4/10/2024 6:16:19 PM",
+      "date": "2024-05-05",
+      "amount": "453",
       "createdBy": "me",
-      "id": 2
-    },
-    {
-      "expenseName": "Food",
-      "category": "Food",
-      "date": "2024-04-09",
-      "amount": "300",
-      "getTime": "4/10/2024 6:16:19 PM",
-      "createdBy": "me",
-      "id": 3
-    },
-    {
-      "expenseName": "Food",
-      "category": "Food",
-      "date": "2024-04-09",
-      "amount": "300",
-      "getTime": "4/10/2024 6:16:19 PM",
-      "createdBy": "me",
-      "id": 4
-    },
-    {
-      "expenseName": "Food",
-      "category": "Food",
-      "date": "2024-04-09",
-      "amount": "300",
-      "getTime": "4/10/2024 6:16:19 PM",
-      "createdBy": "me",
-      "id": 5
-    },
-    {
-      "expenseName": "Food",
-      "category": "Food",
-      "date": "2024-04-09",
-      "amount": "300",
-      "getTime": "4/10/2024 6:16:19 PM",
-      "createdBy": "me",
-      "id": 7
-    },
-    {
-      "expenseName": "Food",
-      "category": "Food",
-      "date": "2024-04-09",
-      "amount": "300",
-      "getTime": "4/10/2024 6:16:19 PM",
-      "createdBy": "me",
-      "id": 8
-    },
-    {
-      "expenseName": "Tablets",
-      "category": "Health",
-      "date": "2024-04-10",
-      "amount": "20",
-      "createdBy": "god",
-      "id": 9
-    },
-    {
-      "expenseName": "tablets",
-      "category": "Health",
-      "date": "2024-04-12",
-      "amount": "34",
-      "createdBy": "me",
-      "id": 11
+      "id": 19
     }
   ]
 }

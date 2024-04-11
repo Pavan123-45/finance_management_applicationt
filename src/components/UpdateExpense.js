@@ -74,13 +74,15 @@ const UpdateExpense = () => {
           onChange={(e) => {
             setCategory(e.target.value)
           }}>
-          <option value="Select Category">Select Category</option>
-          <option value="Health">Health</option>
+           <option value="Health">Health</option>
           <option value="Electronics">Electronics</option>
           <option value="Travel">Travel</option>
           <option value="Education">Education</option>
           <option value="Books">Books</option>
           <option value="Others">Others</option>
+          <option value="Food">Food</option>
+          <option value="Home">Home</option>
+          <option value="Cloth">Cloth</option>
         </select><br />
 
         <label>Date of Expense</label> <br />

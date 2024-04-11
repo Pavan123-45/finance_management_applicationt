@@ -72,8 +72,8 @@ const CreateExpense = () => {
           <option value="Books">Books</option>
           <option value="Others">Others</option>
           <option value="Food">Food</option>
-          <option value="Home">Food</option>
-          <option value="Cloth">Food</option>
+          <option value="Home">Home</option>
+          <option value="Cloth">Cloth</option>
         </select><br />
 
         <label>Date of Expense</label> <br />
